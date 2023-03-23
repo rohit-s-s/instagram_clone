@@ -1,11 +1,27 @@
-**Instagram Frontend Development**
+# **Instagram Frontend Development**
 
 This project is aimed at replicating the Instagram frontend using HTML and CSS.
 
 ## Getting Started
 Clone the repository to your local machine using the following command:
 
-[Link Text](https://github.com/rohit-s-s/insta_clone.git)
+<div>
+  <span id="link-text">https://github.com/rohit-s-s/insta_clone.git</span>
+  <button onclick="copyLink()">Copy</button>
+</div>
+
+<script>
+function copyLink() {
+  var linkText = document.getElementById("link-text");
+  var range = document.createRange();
+  range.selectNode(linkText);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+}
+</script>
+
 
 Open the index.html file in your browser to view the Instagram homepage.
 
