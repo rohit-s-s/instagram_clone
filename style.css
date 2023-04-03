@@ -6,6 +6,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  justify-content: center;
 }
 body{
   background: #f8f8f8;
@@ -60,7 +61,7 @@ body{
 .name{
   display: flex;
   align-items: center;
-  margin: 1rem 0 0 4rem;
+  margin: 1rem 0 0 1rem;
 }
 .name h1{
   font-size: 1.1rem;
@@ -90,6 +91,9 @@ body{
   font-size: 0.938rem;
   font-weight: 400;
 }
+.menu{
+  margin-top: 20px;
+}
 .menu a{
   width: 100%;
   font-size: 1rem;
@@ -97,6 +101,7 @@ body{
   display: flex;
   align-items: center;
   line-height: 40px;
+  
 }
 .menu a:hover , .menu .active{
   color: #e2336b;
@@ -128,10 +133,12 @@ body{
   display: flex;
   align-items: center;
   background: #f8f8f8;
-  width: 200px;
+  width: 400px;
   height: 2.4rem;
   padding: 10px;
   border-radius: 10px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 .search input{
   border: none;
@@ -165,6 +172,8 @@ body{
 }
 .btn-text{
   color: #fff;
+  padding-left: 11px;
+
 }
 
 /*stories*/
@@ -277,6 +286,7 @@ body{
   width: 35px;
   height: 35px;
   border: 2px solid #e2336b;
+  border-radius: 50%;
 }
 .post-img img{
   width: 27px;
@@ -284,7 +294,11 @@ body{
   object-fit: cover;
   border-radius: 50%;
   object-position: center;
+
+  
+  ;
 }
+
 .post-profile{
   display: flex;
   align-items: center;
