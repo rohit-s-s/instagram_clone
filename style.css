@@ -220,7 +220,7 @@ body{
   height: 70px;
   border-radius: 50%;
   color: #fff;
-  background: hsla(246,100%,67%,0.7);
+  
 }
 .feed{
   display: flex;
@@ -252,7 +252,7 @@ body{
   
 }
 .main-post{
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(autp-fit,minmax(300px,auto));
   gap: 11px;
 }
